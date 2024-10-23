@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".topico1.T100MainActivity">
+
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guia_meio"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.5" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guia_esquerda"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.1" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guia_direita"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.9" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guia_topo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.1" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guia_base"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.9"
+        tools:visibility="visible" />
+
+    <TextView
+        android:id="@+id/textView1001"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="#FF004E98"
+        android:gravity="center"
+        android:text="Tarefas de Gelasio Ebel Junior\nTópico 01:"
+        android:textAllCaps="true"
+        android:textAppearance="@style/TextAppearance.Material3.BodyLarge"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toTopOf="@+id/guia_topo"
+        app:layout_constraintEnd_toStartOf="@+id/guia_direita"
+        app:layout_constraintStart_toEndOf="@id/guia_esquerda"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/button1001"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="B1"
+        app:layout_constraintBottom_toTopOf="@+id/button1002"
+        app:layout_constraintEnd_toStartOf="@+id/guia_direita"
+        app:layout_constraintStart_toEndOf="@id/guia_esquerda"
+        app:layout_constraintTop_toBottomOf="@+id/textView1001" />
+
+    <Button
+        android:id="@+id/button1002"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="B2"
+        app:layout_constraintBottom_toTopOf="@+id/button1003"
+        app:layout_constraintEnd_toStartOf="@+id/guia_direita"
+        app:layout_constraintStart_toEndOf="@id/guia_esquerda"
+        app:layout_constraintTop_toBottomOf="@+id/button1001" />
+
+    <Button
+        android:id="@+id/button1003"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="B3"
+
+        app:layout_constraintBottom_toTopOf="@+id/button1004"
+        app:layout_constraintEnd_toStartOf="@+id/guia_direita"
+        app:layout_constraintStart_toEndOf="@id/guia_esquerda"
+        app:layout_constraintTop_toBottomOf="@+id/button1002" />
+
+    <Button
+        android:id="@+id/button1004"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="B4"
+        app:layout_constraintBottom_toTopOf="@+id/guia_base"
+        app:layout_constraintEnd_toStartOf="@+id/guia_direita"
+        app:layout_constraintStart_toEndOf="@id/guia_esquerda"
+        app:layout_constraintTop_toBottomOf="@+id/button1003" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FF008080"
+    tools:context=".MainActivity">
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guia_meio"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.5" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guia_esquerda"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.1" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guia_direita"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.9" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guia_topo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.1" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guia_base"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.9"
+        tools:visibility="visible" />
+
+    <!--  android:gravity="center" ja centra tudo -->
+    <TextView
+        android:id="@+id/textView01"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="#FF004E98"
+        android:gravity="center"
+        android:text="Tarefas de Gelasio Ebel Junior\nEscolha uma opção:"
+        android:textAllCaps="true"
+        android:textAppearance="@style/TextAppearance.Material3.BodyLarge"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toTopOf="@+id/guia_topo"
+        app:layout_constraintEnd_toStartOf="@+id/guia_direita"
+        app:layout_constraintStart_toEndOf="@id/guia_esquerda"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/button00"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="B00"
+        app:layout_constraintTop_toTopOf="@id/guia_base"
+        app:layout_constraintEnd_toStartOf="@+id/guia_direita"
+        app:layout_constraintStart_toEndOf="@id/guia_esquerda"
+        app:layout_constraintBottom_toBottomOf="parent" />
+
+    <Button
+        android:id="@+id/button01"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="B1"
+        app:layout_constraintBottom_toTopOf="@+id/button02"
+        app:layout_constraintEnd_toStartOf="@+id/guia_meio"
+        app:layout_constraintStart_toEndOf="@id/guia_esquerda"
+        app:layout_constraintTop_toBottomOf="@+id/textView01" />
+
+    <Button
+        android:id="@+id/button02"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="B2"
+        app:layout_constraintBottom_toTopOf="@+id/button03"
+        app:layout_constraintEnd_toStartOf="@+id/guia_meio"
+        app:layout_constraintStart_toEndOf="@id/guia_esquerda"
+        app:layout_constraintTop_toBottomOf="@+id/button01" />
+
+    <Button
+        android:id="@+id/button03"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="B3"
+
+        app:layout_constraintBottom_toTopOf="@+id/button04"
+        app:layout_constraintEnd_toStartOf="@+id/guia_meio"
+        app:layout_constraintStart_toEndOf="@id/guia_esquerda"
+        app:layout_constraintTop_toBottomOf="@+id/button02" />
+
+    <Button
+        android:id="@+id/button04"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="B4"
+        app:layout_constraintBottom_toTopOf="@+id/button05"
+        app:layout_constraintEnd_toStartOf="@+id/guia_meio"
+        app:layout_constraintStart_toEndOf="@id/guia_esquerda"
+        app:layout_constraintTop_toBottomOf="@+id/button03" />
+
+    <Button
+        android:id="@+id/button05"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="B5"
+        app:layout_constraintBottom_toTopOf="@+id/button06"
+        app:layout_constraintEnd_toStartOf="@+id/guia_meio"
+        app:layout_constraintStart_toEndOf="@id/guia_esquerda"
+        app:layout_constraintTop_toBottomOf="@+id/button04" />
+
+    <Button
+        android:id="@+id/button06"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="B6"
+        app:layout_constraintBottom_toTopOf="@+id/button07"
+        app:layout_constraintEnd_toStartOf="@+id/guia_meio"
+        app:layout_constraintStart_toEndOf="@id/guia_esquerda"
+        app:layout_constraintTop_toBottomOf="@+id/button05" />
+
+    <Button
+        android:id="@+id/button07"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="B7"
+        app:layout_constraintBottom_toTopOf="@+id/button08"
+        app:layout_constraintEnd_toStartOf="@+id/guia_meio"
+        app:layout_constraintStart_toEndOf="@id/guia_esquerda"
+        app:layout_constraintTop_toBottomOf="@+id/button06" />
+
+    <Button
+        android:id="@+id/button08"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="B8"
+        app:layout_constraintBottom_toTopOf="@+id/button09"
+        app:layout_constraintEnd_toStartOf="@+id/guia_meio"
+        app:layout_constraintStart_toEndOf="@id/guia_esquerda"
+        app:layout_constraintTop_toBottomOf="@+id/button07" />
+
+    <Button
+        android:id="@+id/button09"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="B9"
+        app:layout_constraintBottom_toTopOf="@+id/button10"
+        app:layout_constraintEnd_toStartOf="@+id/guia_meio"
+        app:layout_constraintStart_toEndOf="@id/guia_esquerda"
+        app:layout_constraintTop_toBottomOf="@+id/button08" />
+
+    <Button
+        android:id="@+id/button10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="B10"
+        app:layout_constraintBottom_toTopOf="@+id/guia_base"
+        app:layout_constraintEnd_toStartOf="@+id/guia_meio"
+        app:layout_constraintStart_toEndOf="@id/guia_esquerda"
+        app:layout_constraintTop_toBottomOf="@+id/button09" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
