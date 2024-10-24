@@ -7,44 +7,4 @@
     android:layout_height="match_parent"
     tools:context=".topico1.T104MainActivity">
 
-    <androidx.constraintlayout.widget.Guideline
-        android:id="@+id/guia_meio"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:orientation="vertical"
-        app:layout_constraintGuide_percent="0.5" />
-
-    <androidx.constraintlayout.widget.Guideline
-        android:id="@+id/guia_esquerda"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:orientation="vertical"
-        app:layout_constraintGuide_percent="0.1" />
-
-    <androidx.constraintlayout.widget.Guideline
-        android:id="@+id/guia_direita"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:orientation="vertical"
-        app:layout_constraintGuide_percent="0.9" />
-
-    <androidx.constraintlayout.widget.Guideline
-        android:id="@+id/guia_topo"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        app:layout_constraintGuide_percent="0.1" />
-
-    <androidx.constraintlayout.widget.Guideline
-        android:id="@+id/guia_base"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        app:layout_constraintGuide_percent="0.9"
-        tools:visibility="visible" />
-
-
-
-
-
 </androidx.constraintlayout.widget.ConstraintLayout>

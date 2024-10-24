@@ -10,7 +10,7 @@
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/Theme.TarefasDDM"
+        android:theme="@style/Theme.MaterialComponents.DayNight"
         tools:targetApi="31">
         <activity
             android:name=".topico1.T104MainActivity"
@@ -30,10 +30,6 @@
         <activity
             android:name=".topico1.T100MainActivity"
             android:exported="false" />
-        <activity
-            android:name=".MainActivity3Contador"
-            android:exported="false"
-            android:theme="@style/Theme.TarefasDDM" />
         <activity
             android:name=".MainActivity"
             android:exported="true">
