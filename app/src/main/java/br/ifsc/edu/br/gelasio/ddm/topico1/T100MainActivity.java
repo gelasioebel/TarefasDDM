@@ -12,7 +12,6 @@ import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 
-import br.ifsc.edu.br.gelasio.ddm.MainActivity;
 import br.ifsc.edu.br.gelasio.ddm.R;
 
 public class T100MainActivity extends AppCompatActivity {
@@ -70,9 +69,10 @@ public class T100MainActivity extends AppCompatActivity {
             public void onClick(View view) {
                 b1003.setText("Sorteio Números Aleatórios \ud83d\udcea");
                 Intent i;
+                // PQ AS VEZES NÃO BUILDA A .class??????
                 i = new Intent(T100MainActivity.this, T103MainActivity.class);
                 startActivity(i);
-                finish();
+                //finish();
             }
         });
 
@@ -85,7 +85,9 @@ public class T100MainActivity extends AppCompatActivity {
         b1004.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                finish();
+                Intent i = new Intent(T100MainActivity.this, T104MainActivity.class);
+                startActivity(i);
+                //finish();
             }
         });
 

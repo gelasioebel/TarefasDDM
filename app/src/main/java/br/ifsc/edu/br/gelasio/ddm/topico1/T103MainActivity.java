@@ -1,6 +1,5 @@
 package br.ifsc.edu.br.gelasio.ddm.topico1;
 
-import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -13,9 +12,6 @@ import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 
-import com.google.android.material.textfield.TextInputEditText;
-
-import java.text.BreakIterator;
 import java.util.Random;
 
 import br.ifsc.edu.br.gelasio.ddm.R;
