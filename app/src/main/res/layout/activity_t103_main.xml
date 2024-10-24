@@ -43,4 +43,116 @@
         app:layout_constraintGuide_percent="0.9"
         tools:visibility="visible" />
 
+    <!--BOLD ref. https://kotlinandroid.org/textview/bold-text/#:~:text=To%20change%20the%20text%20style,text%20in%20TextView%20appears%20bold.-->
+    <TextView
+        android:id="@+id/textView1031"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="#FF004E98"
+        android:gravity="center"
+        android:text="Tarefas de Gelasio Ebel Junior\nTópico 01:"
+        android:textAllCaps="true"
+        android:textAppearance="@style/TextAppearance.Material3.BodyLarge"
+        android:textColor="@color/yellow"
+        android:textStyle="bold"
+        app:cornerRadius="10dp"
+        app:layout_constraintBottom_toTopOf="@+id/guia_topo"
+        app:layout_constraintEnd_toStartOf="@+id/guia_direita"
+        app:layout_constraintStart_toEndOf="@id/guia_esquerda"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView1032"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"
+        android:background="@color/win98background"
+        android:gravity="center"
+        android:text="Sorteio Números Aleatórios\n Entre com o intervalo:"
+        android:textAllCaps="true"
+        android:textAppearance="@style/TextAppearance.Material3.BodyLarge"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        app:cornerRadius="10dp"
+        app:layout_constraintBottom_toTopOf="@+id/editTextNumber1031"
+        app:layout_constraintEnd_toStartOf="@+id/guia_direita"
+        app:layout_constraintStart_toEndOf="@id/guia_esquerda"
+        app:layout_constraintTop_toBottomOf="@id/guia_topo"/>
+
+    <EditText
+        android:id="@+id/editTextNumber1031"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_centerVertical="true"
+        android:layout_width="0dp"
+        android:layout_height="100dp"
+        android:ellipsize="start"
+        android:gravity="center"
+        android:hint="N1"
+        android:inputType="text"
+        android:background="@drawable/edit_text_border"
+        app:layout_constraintBottom_toTopOf="@+id/button1031"
+        app:layout_constraintEnd_toStartOf="@+id/guia_meio"
+        app:layout_constraintStart_toEndOf="@id/guia_esquerda"
+        app:layout_constraintTop_toBottomOf="@id/textView1032"/>
+
+    <EditText
+        android:id="@+id/editTextNumber1032"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_centerVertical="true"
+        android:layout_width="0dp"
+        android:layout_height="100dp"
+        android:ellipsize="start"
+        android:gravity="center"
+        android:hint="N2"
+        android:inputType="text"
+        android:background="@drawable/edit_text_border"
+        app:layout_constraintBottom_toTopOf="@+id/button1031"
+        app:layout_constraintEnd_toStartOf="@+id/guia_direita"
+        app:layout_constraintStart_toEndOf="@id/guia_meio"
+        app:layout_constraintTop_toBottomOf="@id/textView1032" />
+
+    <Button
+        android:id="@+id/button1031"
+        android:layout_width="0dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="15dp"
+        android:text="SORTEAR"
+        app:cornerRadius="10dp"
+        app:layout_constraintBottom_toTopOf="@+id/textView1033"
+        app:layout_constraintEnd_toStartOf="@+id/guia_direita"
+        app:layout_constraintStart_toEndOf="@id/guia_esquerda"
+        app:layout_constraintTop_toBottomOf="@+id/editTextNumber1031" />
+
+    <!-- https://stackoverflow.com/questions/3506696/auto-scrolling-textview-in-android-to-bring-text-into-view-->
+    <TextView
+        android:id="@+id/textView1033"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="15dp"
+        android:background="@color/win98graymenu"
+        android:text="O número sorteado foi:\n"
+        android:textAllCaps="true"
+        android:textAppearance="@style/TextAppearance.Material3.BodyLarge"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:scrollbars="vertical"
+        android:gravity="center"
+        app:cornerRadius="10dp"
+        app:layout_constraintBottom_toTopOf="@+id/guia_base"
+        app:layout_constraintEnd_toStartOf="@+id/guia_direita"
+        app:layout_constraintStart_toEndOf="@id/guia_esquerda"
+        app:layout_constraintTop_toBottomOf="@id/button1031" />
+
+
+
+
 </androidx.constraintlayout.widget.ConstraintLayout>

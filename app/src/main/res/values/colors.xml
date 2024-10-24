@@ -2,4 +2,14 @@
 <resources>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
+    <color name="yellow">#FFFFFF00</color>
+    <color name="blue">#FF0000FF</color>
+    <color name="win98background">#FF008080</color>
+    <color name="win98graymenu">#FFC0C0C0</color>
+    <color name="win7background">#FF004E98</color>
+    <color name="win11lightpurplebackground">#FF8E8CD8</color>
+    <color name="win11lightroxobackground">#FF8E8CD8</color>
+    <color name="win11darkroxobackground">#FF744DA9</color>
+
+
 </resources>

@@ -5,6 +5,7 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@android:color/holo_blue_bright"
     tools:context=".topico1.T100MainActivity">
 
 
@@ -44,6 +45,7 @@
         app:layout_constraintGuide_percent="0.9"
         tools:visibility="visible" />
 
+    <!--BOLD ref. https://kotlinandroid.org/textview/bold-text/#:~:text=To%20change%20the%20text%20style,text%20in%20TextView%20appears%20bold.-->
     <TextView
         android:id="@+id/textView1001"
         android:layout_width="0dp"
@@ -53,7 +55,9 @@
         android:text="Tarefas de Gelasio Ebel Junior\nTópico 01:"
         android:textAllCaps="true"
         android:textAppearance="@style/TextAppearance.Material3.BodyLarge"
-        android:textColor="@color/white"
+        android:textColor="@color/yellow"
+        android:textStyle="bold"
+        app:cornerRadius="10dp"
         app:layout_constraintBottom_toTopOf="@+id/guia_topo"
         app:layout_constraintEnd_toStartOf="@+id/guia_direita"
         app:layout_constraintStart_toEndOf="@id/guia_esquerda"
@@ -61,9 +65,10 @@
 
     <Button
         android:id="@+id/button1001"
-        android:layout_width="wrap_content"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:text="B1"
+        app:cornerRadius="10dp"
         app:layout_constraintBottom_toTopOf="@+id/button1002"
         app:layout_constraintEnd_toStartOf="@+id/guia_direita"
         app:layout_constraintStart_toEndOf="@id/guia_esquerda"
@@ -71,9 +76,10 @@
 
     <Button
         android:id="@+id/button1002"
-        android:layout_width="wrap_content"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:text="B2"
+        app:cornerRadius="10dp"
         app:layout_constraintBottom_toTopOf="@+id/button1003"
         app:layout_constraintEnd_toStartOf="@+id/guia_direita"
         app:layout_constraintStart_toEndOf="@id/guia_esquerda"
@@ -81,10 +87,10 @@
 
     <Button
         android:id="@+id/button1003"
-        android:layout_width="wrap_content"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:text="B3"
-
+        app:cornerRadius="10dp"
         app:layout_constraintBottom_toTopOf="@+id/button1004"
         app:layout_constraintEnd_toStartOf="@+id/guia_direita"
         app:layout_constraintStart_toEndOf="@id/guia_esquerda"
@@ -92,9 +98,10 @@
 
     <Button
         android:id="@+id/button1004"
-        android:layout_width="wrap_content"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:text="B4"
+        app:cornerRadius="10dp"
         app:layout_constraintBottom_toTopOf="@+id/guia_base"
         app:layout_constraintEnd_toStartOf="@+id/guia_direita"
         app:layout_constraintStart_toEndOf="@id/guia_esquerda"
