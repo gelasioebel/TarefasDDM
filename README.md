@@ -22,6 +22,8 @@ This repository contains homework assignments and projects for the Mobile Device
 - ✅ Tópico 3
 - ✅ Tópico 4
 - ✅ 
+- ✅ 
+- ✅ 
 - ✅
 - - ✅
 - - - ✅ 
