@@ -3,12 +3,12 @@ plugins {
 }
 
 android {
-    namespace = "br.ifsc.edu.br.gelasio.ddm"
+    namespace = "br.ifsc.edu.br.gelasioebel.gelasioplanetas"
     compileSdk = 35
 
     defaultConfig {
-        applicationId = "br.ifsc.edu.br.gelasio.ddm"
-        minSdk = 30
+        applicationId = "br.ifsc.edu.br.gelasioebel.gelasioplanetas"
+        minSdk = 35
         targetSdk = 35
         versionCode = 1
         versionName = "1.0"
@@ -26,11 +26,8 @@ android {
         }
     }
     compileOptions {
-        sourceCompatibility = JavaVersion.VERSION_1_8
-        targetCompatibility = JavaVersion.VERSION_1_8
-    }
-    buildFeatures {
-        viewBinding = true
+        sourceCompatibility = JavaVersion.VERSION_11
+        targetCompatibility = JavaVersion.VERSION_11
     }
 }
 
@@ -40,8 +37,6 @@ dependencies {
     implementation(libs.material)
     implementation(libs.activity)
     implementation(libs.constraintlayout)
-    implementation(libs.navigation.fragment)
-    implementation(libs.navigation.ui)
     testImplementation(libs.junit)
     androidTestImplementation(libs.ext.junit)
     androidTestImplementation(libs.espresso.core)

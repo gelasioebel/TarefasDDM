@@ -7,4 +7,25 @@
     android:layout_height="match_parent"
     tools:context=".topico1.T104MainActivity">
 
+
+
+    <TextView
+        android:id="@+id/textView1032"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"
+        android:background="@color/win98background"
+        android:gravity="center"
+        android:text="Este APP em si é a atividade."
+        android:textAllCaps="true"
+        android:textAppearance="@style/TextAppearance.Material3.BodyLarge"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        app:cornerRadius="10dp"
+        app:layout_constraintBottom_toTopOf="parent"
+        app:layout_constraintEnd_toStartOf="parent"
+        app:layout_constraintStart_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="parent"/>
+
 </androidx.constraintlayout.widget.ConstraintLayout>

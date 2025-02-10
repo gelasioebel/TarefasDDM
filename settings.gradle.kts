@@ -21,3 +21,5 @@ dependencyResolutionManagement {
 
 rootProject.name = "TarefasDDM"
 include(":app")
+include(":app:gelasiopaint")
+include(":app:gelasioplanetas")
